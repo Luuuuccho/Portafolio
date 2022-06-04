@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Luciano Cinalli</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/stylos.css" />
+        <link rel="stylesheet" href="css/contacto.css" />
+        <script src="https://kit.fontawesome.com/6f1ed9c19f.js"crossorigin="anonymous"></script>
+        <script defer src="js/scripts.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-menu">
+                    <a href="index.html" class="logo nav-link">Luciano Cinalli</a>
+                    <button class="nav-toggle" aria-label="Abrir menú">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <li class="nav-menu-item">
+                        <a href="#acercademi" class="nav-menu-link nav-link">Acerca de Mi</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#pasatiempos" class="nav-menu-link nav-link">Pasatiempos y softskills</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#formaciones" class="nav-menu-link nav-link">Formaciones y cursos</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#experiencia" class="nav-menu-link nav-link">Experiencia</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <nav class="nav-formulario">
+            <form action="send">
+                <label for="nombre">Nombre o empresa</label>
+                <input type="text" id="nombre" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="phone" id="telefono" required placeholder="(xxxx) xx-xxxx">
+
+                <label for="mail">E-mail</label>
+                <input type="email" id="mail" required placeholder="usuario@email.com">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="61" rows="10" placeholder="Ingrese mensaje aquí."></textarea>
+
+                <input type="submit" id="enviar">
+                <object id="pdfHolder" data="test.pdf" type="application/pdf" width="300" height="200">
+                    <p>Ver Curriculum en PDF <br> </p>
+                    <a href="archivos/CVLuciano22.pdf" download ><img src="img/icono_PDF.png" id="imgpdf" ></a>
+                 </object>
+            </form>
+        </nav>
+    </body>
+</html>
