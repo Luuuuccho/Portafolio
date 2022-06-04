@@ -68,9 +68,10 @@ nav ul li a:hover::before{
 }
 /*----------------------------------------------Redes Sociales------------------------------------------------------*/
 .botones{
-  min-width: 50%;
   display: flex;
   justify-content: space-around;
+  justify-content: center;
+  align-items: center;
 }
 .botones a{
   text-decoration: none;
@@ -84,12 +85,14 @@ nav ul li a:hover::before{
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   transition: all .4s ease-in-out;
+  margin: 5px 10px;
 }
 .botones a:hover{
   transform: scale(1.2);
 }
 /*----------------------------------------Presentación-------------------------------------------------------------*/
-.contenedor img{
+/*.contenedor img{*/
+.img-formaciones{
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -114,4 +117,12 @@ main{
   align-items: center;
 }
 /*---------------------------------------------Pasatiempos y Softskills----------------------------------------------*/
-
+button{
+  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+}
+.img-experiencia{
+  width: 200px;
+  height: 200px;
+}
