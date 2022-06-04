@@ -6,37 +6,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/stylos.css" />
-        <link rel="stylesheet" href="css/contacto.css" />
         <script src="https://kit.fontawesome.com/6f1ed9c19f.js"crossorigin="anonymous"></script>
         <script defer src="js/scripts.js"></script>
     </head>
     <body>
-        <header class="header">
-            <nav class="nav">
-                <ul class="nav-menu">
-                    <a href="index.html" class="logo nav-link">Luciano Cinalli</a>
-                    <button class="nav-toggle" aria-label="Abrir menú">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <li class="nav-menu-item">
-                        <a href="#acercademi" class="nav-menu-link nav-link">Acerca de Mi</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="#pasatiempos" class="nav-menu-link nav-link">Pasatiempos y softskills</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="#formaciones" class="nav-menu-link nav-link">Formaciones y cursos</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="#experiencia" class="nav-menu-link nav-link">Experiencia</a>
-                    </li>
-                    <li class="nav-menu-item">
-                        <a href="contacto.html" class="nav-menu-link nav-link nav-menu-link_active">Contacto</a>
-                    </li>
-                </ul>
-            </nav>
+        <header>
+            <div class="menu">
+                <a href="index.html"><img src="img/Inicio.png" alt="Inicio" class="logo-inicio"></a>
+                <nav>
+                    <ul>
+                        <li><a href="#acercademi">Sobre Mí</a></li>
+                        <li><a href="#pasatiempos">Habilidades</a></li>
+                        <li><a href="#formaciones">Formación</a></li>
+                        <li><a href="#experiencia">Experiencia</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <nav class="nav-formulario">
+        <nav class="formulario">
             <form action="send">
                 <label for="nombre">Nombre o empresa</label>
                 <input type="text" id="nombre" required>
