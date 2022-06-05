@@ -4,9 +4,14 @@
     margin: 0;
     box-sizing: border-box;
   }
+:root{
+  --main-bg-color: rgba(0, 0, 0, 4);
+  --main-color-text: black;
+  --main-color-menu: blue;
+}
 body{
  /* background-color: #F5F5F5;*/
-  background-color: rgba(0, 0, 0, 4);
+  background-color: var(--main-bg-color);
   font-family: 'Times New Roman', Times, serif;
   color: aliceblue;
 }
@@ -91,12 +96,15 @@ nav ul li a:hover::before{
   transform: scale(1.2);
 }
 /*----------------------------------------Presentación-------------------------------------------------------------*/
-/*.contenedor img{*/
-.img-formaciones{
+.contenedor img{
   width: 200px;
   height: 200px;
   border-radius: 50%;
   align-items: left;
+}
+.contenedor:hover{
+  background-color: rgb(170, 95, 4);
+  transition: 2s;
 }
 /*-----------------------------------------Divisores------------------------------------------------------------*/
 main{
@@ -116,13 +124,50 @@ main{
 .contenedor div section{
   align-items: center;
 }
+.div-experiencia{
+  width: 40%;
+  background-color: rgba(0, 0, 0, 4);
+  margin: 20px auto;
+  margin-top: auto;
+  padding: 20px;
+  text-align: center;
+}
+.div-experiencia h2{
+  margin: 10px;
+}
 /*---------------------------------------------Pasatiempos y Softskills----------------------------------------------*/
-button{
+.link-proyectos{
+  display: flex;
+  justify-content: center;
+}
+.boton-exp{
+  padding: 10px;
+  margin: 10px;
   justify-content: space-around;
   justify-content: center;
   align-items: center;
+  border-style: solid;
+  border-color: aliceblue;
+  border-radius: 5px;
+  background:#cdddec;
+  text-decoration: none;
+  color: black;
 }
 .img-experiencia{
-  width: 200px;
-  height: 200px;
+  width: 389px;
+  height: 232px;
+}
+.ico-pasatiempos i{
+  text-decoration: none;
+  font-size: 20px;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  background: #027cf5;
+  color: #F5F5F5;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+  transition: all .4s ease-in-out;
+  margin: 5px 10px;
 }
