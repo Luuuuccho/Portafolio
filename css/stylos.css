@@ -7,10 +7,11 @@
 :root{
   --main-bg-color: rgba(0, 0, 0, 4);
   --main-color-text: black;
-  --main-color-menu: blue;
+  --main-color-menu: #034574;
+  --main-color-text-icon: #F5F5F5;
+  --main-color-backg-icon: #034574;
 }
 body{
- /* background-color: #F5F5F5;*/
   background-color: var(--main-bg-color);
   font-family: 'Times New Roman', Times, serif;
   color: aliceblue;
@@ -20,7 +21,7 @@ body{
   margin: 0 auto;
 }
 header {
-  background: #034574 ;
+  background: var(--main-color-menu) ;
   width: 100%;
   clear: both;
   content: '';
@@ -44,7 +45,7 @@ nav ul li{
 }
 nav ul li a{
   text-decoration: none;
-  color: #F5F5F5;
+  color: var(--main-color-text-icon);
   font-weight: bold;
   padding: 5px;
   position: relative;
@@ -59,12 +60,12 @@ nav ul li a{
 nav ul li a::before{
   display: block;
   content: '';
-  background: #027cf5;
+  background: rgb(10, 87, 228);
   width: 0%;
   height: 5px;
   top: 0;
   position: absolute;
-  transition: 0.5s;
+  transition: 0.8s;
 }
 nav ul li a:hover::before{
   width: 100%;
@@ -85,7 +86,7 @@ nav ul li a:hover::before{
   height: 35px;
   line-height: 35px;
   text-align: center;
-  background: #034574;
+  background: var(--main-color-backg-icon);
   color: #F5F5F5;
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
@@ -107,7 +108,7 @@ main{
   padding-top: 50px;
 }
 .contenedor{
-  width: 40%;
+  width: 90%;
   background-color: rgba(0, 0, 0, 4);
   margin: 20px auto;
   margin-top: auto;
@@ -121,12 +122,14 @@ main{
   align-items: center;
 }
 .div-experiencia{
-  width: 40%;
+  width: 50%;
   background-color: rgba(0, 0, 0, 4);
   margin: 20px auto;
   margin-top: auto;
   padding: 20px;
   text-align: center;
+  border-color: green;
+  border-style: solid;
 }
 .div-experiencia h2{
   margin: 10px;
@@ -155,12 +158,12 @@ main{
 }
 .ico-pasatiempos i{
   text-decoration: none;
-  font-size: 20px;
-  width: 35px;
-  height: 35px;
-  line-height: 35px;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
   text-align: center;
-  background: #027cf5;
+  background: var(--main-color-backg-icon);
   color: #F5F5F5;
   border-radius: 50%;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
