@@ -102,10 +102,6 @@ nav ul li a:hover::before{
   border-radius: 50%;
   align-items: left;
 }
-.contenedor:hover{
-  background-color: rgb(170, 95, 4);
-  transition: 2s;
-}
 /*-----------------------------------------Divisores------------------------------------------------------------*/
 main{
   padding-top: 50px;
