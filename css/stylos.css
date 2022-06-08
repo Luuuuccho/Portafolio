@@ -117,6 +117,8 @@ main{
   border-radius: 10px;
   border-color: rgba(3, 119, 18, 0.836);
   border-style: solid;
+  overflow: hidden;
+  /*position: relative;*/
 }
 .contenedor div section{
   align-items: center;
@@ -134,6 +136,38 @@ main{
 .div-experiencia h2{
   margin: 10px;
 }
+.div-formacion{
+  width: 250px;
+  float: left;
+  margin: 50px;
+}
+.div-formacion img{
+  width: 150px;
+  height: 150px;
+}
+.formulario{
+  align-items: center;
+}
+.formulario input{
+  height: 30px;
+  border-style: solid;
+  border-color: #F5F5F5;
+  border-radius: 5px;
+  background-color: #F5F5F5;
+  color: black;
+  margin-right: 10px;
+  display: flex;
+}
+.formulario label{
+  display: flex;
+}
+.formulario textarea{
+  width: 70%;
+  height: 100px;
+  resize: none;
+  margin: 30px 0 10px 0;
+  display: flex;
+}
 /*---------------------------------------------Pasatiempos y Softskills----------------------------------------------*/
 .link-proyectos{
   display: flex;
@@ -142,19 +176,17 @@ main{
 .boton-exp{
   padding: 10px;
   margin: 10px;
-  justify-content: space-around;
-  justify-content: center;
-  align-items: center;
   border-style: solid;
-  border-color: aliceblue;
+  border-color: #cdddec;
   border-radius: 5px;
   background:#cdddec;
   text-decoration: none;
   color: black;
 }
 .img-experiencia{
-  width: 389px;
-  height: 232px;
+  max-width: 389px;
+  max-height: 232px;
+  object-fit: contain;
 }
 .ico-pasatiempos i{
   text-decoration: none;
@@ -169,4 +201,14 @@ main{
   box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
   transition: all .4s ease-in-out;
   margin: 5px 10px;
+}
+/*------------------------------------------------Pié de página---------------------------------------------------*/
+.pie{
+  text-align: center;
+}
+/*-----------------------------------------------Movile version------------------------------------------------------*/
+@media (max-width:700px){
+  header{
+    flex-direction: column;
+  }
 }
