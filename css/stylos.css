@@ -150,6 +150,7 @@ main{
 }
 .formulario input{
   height: 30px;
+  width: 45%;
   border-style: solid;
   border-color: #F5F5F5;
   border-radius: 5px;
@@ -158,11 +159,15 @@ main{
   margin-right: 10px;
   display: flex;
 }
+.formulario #enviar{
+  width: 60px;
+  text-align: center;
+}
 .formulario label{
   display: flex;
 }
 .formulario textarea{
-  width: 70%;
+  width: 45%;
   height: 100px;
   resize: none;
   margin: 30px 0 10px 0;
@@ -184,9 +189,9 @@ main{
   color: black;
 }
 .img-experiencia{
-  max-width: 389px;
-  max-height: 232px;
-  object-fit: contain;
+  max-width:100%;
+  width:auto;
+  height:auto;
 }
 .ico-pasatiempos i{
   text-decoration: none;
