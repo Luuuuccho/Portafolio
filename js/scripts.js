@@ -11,16 +11,36 @@ navToggle.addEventListener("click", () => {
   }
 });*/
 
-var nombre = document.querySelector("#nombre");
-var kiro = document.getElementById('lb-nombre');
 
-nombre.addEventListener('input', () => {
-  if(nombre.value === null || nombre.value === ''){
-    kiro.style.backgroundColor = 'red';
-    console.log('Campo vacío.');
-  } else if(nombre.length>50){
-    console.log('Máximo chars');
-  }else if(nombre != null && nombre != ''){
-    kiro.backgroundColor = 'white';
+const formulario = document.getElementById('form-contacto');
+
+
+formulario.addEventListener("submit", e=>{
+  e.preventDefault();
+  let reglamail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+  if(formulario.nombre.value == null || formulario.nombre.value == ''){
+    console.log("No hay nada.");
+  } else {
+    console.log("Perfecto.");
   }
+  if(reglamail.test(formulario.mail.value)){
+    console.log("Mail válido");
+  } else {
+    console.log("Mail inválido");
+  }
+
 });
+
+
+
+/*const formulario = document.getElementById('form-contacto');
+const entradas = document.querySelectorAll('#form-contacto');
+const validarFormulario = () =>{
+}
+entradas.forEach((input) => {
+  input.addEventListener('keyup', validarFormulario);
+  input.addEventListener('blur', validarFormulario);
+});
+formulario.addEventListener('submit', (lu) => {
+  lu.preventDefault();
+});*/
