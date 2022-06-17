@@ -1,17 +1,3 @@
-/*const navToggle = document.querySelector(".nav-toggle");
-const navMenu = document.querySelector(".nav-menu");
-
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("nav-menu_visible");
-
-  if (navMenu.classList.contains("nav-menu_visible")) {
-    navToggle.setAttribute("aria-label", "Cerrar menú");
-  } else {
-    navToggle.setAttribute("aria-label", "Abrir menú");
-  }
-});*/
-
-
 const formulario = document.getElementById('form-contacto');
 
 
@@ -30,17 +16,3 @@ formulario.addEventListener("submit", e=>{
   }
 
 });
-
-
-
-/*const formulario = document.getElementById('form-contacto');
-const entradas = document.querySelectorAll('#form-contacto');
-const validarFormulario = () =>{
-}
-entradas.forEach((input) => {
-  input.addEventListener('keyup', validarFormulario);
-  input.addEventListener('blur', validarFormulario);
-});
-formulario.addEventListener('submit', (lu) => {
-  lu.preventDefault();
-});*/
